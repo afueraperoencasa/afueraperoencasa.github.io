@@ -1,25 +1,34 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | New Unity Project (4)</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/afuerperoencasa.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">New Unity Project (4)</div>
-      </div>
-    </div>
-  </body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Afuera pero en casa</title>
+        <link rel="shortcut icon" href="TemplateData/afueraperoencasa-01.jpg">
+        <link href="stylesheet.css">
+        <style type="text/css">
+            .instrucciones {
+                width: 100vh;
+                height: 100vh;
+                background-image: url(TemplateData/instrucciones.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            
+            .empezar {
+                height: 40px;
+                width: 80px;
+                background-image: url(TemplateData/empezar.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                
+                position: absolute;
+                right: 10vh;
+                margin-top: -120;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="instrucciones"></div>
+       <a href="juego.html"><div class="empezar"></div></a>
+    </body>
 </html>
